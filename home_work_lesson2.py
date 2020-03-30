@@ -18,11 +18,18 @@ while line_number<=5:
 '''
 print('Решение задачи №2')
 num_5 = 0
-number_10 = input('Введите десять цифр')
-number_10 = int(number_10)
-while number_10>0:
-    if number_10%10==5: num_5 = num_5+1
-    print(num_5)
+for i in range(3)
+    number_10 = input('Введите десять цифр')
+    number_10 = int(number_10)
+    while number_10>0
+        number_10 = number_10//10
+#number_10 = input('Введите десять цифр')
+#number_10 = int(number_10)
+#while number_10>0:
+#    if number_10%10==5: num_5 = num_5+1
+#    number_10 = number_10//10
+#    break
+#print(num_5)
 
 '''
 Задача 3
