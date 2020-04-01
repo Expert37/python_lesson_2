@@ -17,78 +17,113 @@ while line_number<=5:
 Пользователь в цикле вводит 10 цифр. Найти количество введеных пользователем цифр 5.
 '''
 print('Решение задачи №2')
-num_5 = 0
-for i in range(3)
-    number_10 = input('Введите десять цифр')
-    number_10 = int(number_10)
-    while number_10>0
-        number_10 = number_10//10
-#number_10 = input('Введите десять цифр')
-#number_10 = int(number_10)
-#while number_10>0:
-#    if number_10%10==5: num_5 = num_5+1
-#    number_10 = number_10//10
-#    break
-#print(num_5)
+'''
+При решении данной задачи не удалось реализовать проверку того, что пользователь вводит именно 10-ти значное число.
+'''
+sum_5 = 0
+number_10 = input('Введите 10-ти значное число')
+number_10 = int(number_10)
+while number_10>0:
+    if number_10%10==5:
+        sum_5 = sum_5 + 1
+    number_10 = number_10//10
+print(sum_5)
 
 '''
 Задача 3
 Найти сумму ряда чисел от 1 до 100. Полученный результат вывести на экран.
 '''
-# sum = 0
-#
-# for i in range(1,101):
-#     sum+=i
-# print(sum)
+print('Решение задачи №3')
+sum = 0
+for i in range(1,101):
+   sum = sum + i
+print(sum)
 
 '''
 Задача 4
 Найти произведение ряда чисел от 1 до 10. Полученный результат вывести на экран.
 '''
+print('Решение задачи №4')
+proizv = 1
+for i in range(1,11):
+    proizv = proizv*i
+print(proizv)
 
 '''
 Задача 5
 Вывести цифры числа на каждой строчке.
 '''
-
-# integer_number = 2129
-#
-# #print(integer_number%10,integer_number//10)
-#
-# while integer_number>0:
-#     print(integer_number%10)
-#     integer_number = integer_number//10
+'''
+При решении данной задачи не удалось реализовать обратный порядок записи цыфр
+'''
+print('Решение задачи №5')
+integer_number = 4568752
+while integer_number>0:
+    print(integer_number%10)
+    integer_number = integer_number//10
 
 '''
 Задача 6
 Найти сумму цифр числа.
 '''
+print('Решение задачи №6')
+integer_number = 456
+sum_1 = 0
+while integer_number>0:
+    sum_1 = sum_1 + integer_number%10
+    integer_number = integer_number//10
+print(sum_1)
 
 
 '''
 Задача 7
 Найти произведение цифр числа.
 '''
+print('Решение задачи №7')
+integer_number = 456
+proizv = 1
+while integer_number>0:
+    proizv = proizv * (integer_number%10)
+    integer_number = integer_number//10
+print(proizv)
+
 
 '''
 Задача 8
 Дать ответ на вопрос: есть ли среди цифр числа 5?
 '''
-#integer_number = 21553413
-#while integer_number>0:
-#    if integer_number%10 == 5:
-#        print('Yes')
-#        break
-#    integer_number = integer_number//10
-#else: print('No')
+print('Решение задачи №8')
+integer_number = 1231354
+while integer_number>0:
+    if integer_number%10 == 5:
+        print('Yes')
+        break
+    integer_number = integer_number//10
+else: print('No')
 
 '''
 Задача 9
 Найти максимальную цифру в числе
 '''
-
-
+print('Решение задачи №9')
+max_num = 0
+number = None
+integer_number = 1235641164712
+while integer_number>0:
+    number = integer_number%10
+    if number>max_num:
+        max_num = number
+    integer_number = integer_number//10
+print(max_num)
 '''
 Задача 10
 Найти количество цифр 5 в числе
 '''
+print('Решение задачи №10')
+num_5 = 0
+number_10 = 1234565555
+while number_10>0:
+    if number_10%10==5:
+        num_5 = num_5 + 1
+    number_10 = number_10//10
+print(num_5)
